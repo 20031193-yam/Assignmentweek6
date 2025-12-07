@@ -47,11 +47,11 @@ namespace SydneyHotel
             {
                 rd[i] = new ReservationDetail();
 
-                Console.Write("Enter customer name: ");
+                Console.Write("Enter guest name: ");
                 rd[i].customerName = Console.ReadLine();
 
                 // Input for number of nights with validation
-                Console.Write("Enter the number of nights: ");
+                Console.Write("Enter the number of days: ");
                 rd[i].nights = Convert.ToInt32(Console.ReadLine());
                 while (!(rd[i].nights > 0 && rd[i].nights <= 20))
                 {
